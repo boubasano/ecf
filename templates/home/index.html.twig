@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    <section id="app">
+        <h1>Rechercher la météo d'une autre ville !</h1>
+        {{ form_start(form) }}
+        <nav class="navbar navbar-light bg-dark">
+            <input class="form-control mr-sm-2"
+                   placeholder="Search"
+                   aria-label="Search"
+                   id="search"
+                   name="search"/>
+            <button class="btn btn-outline-success my-2 my-sm-0" id="button"
+                    type="submit">{{ button_label|default('Search') }}</button>
+            {{ form_end(form) }}
+        </nav>
+        <h1> La météo de votre localité</h1>
+        <h2>
+            <a href="{{ path('home') }}"><span id="ville"></span></a>
+        </h2>
+        <span id="icons"></span>
+        <h3><span id="temperature"></span> °C (<span id="conditions"></span>)</h3>
+        <h3>Taux d'humidité : <span id="humidity"></span></h3>
+    </section>
+{% endblock %}
