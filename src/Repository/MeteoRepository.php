@@ -19,6 +19,20 @@ class MeteoRepository extends ServiceEntityRepository
         parent::__construct($registry, Meteo::class);
     }
 
+
+    public function findMeteoByName($name)
+    {
+        return $this->createQueryBuilder("m")
+            ->andWhere("m.name=:NAME")
+            ->setParameter('NAME', $name)
+            ->orderBy('m.id', 'DESC')
+            ->setMaxResults(1)
+            ->setLifetime(1)
+            ->getQuery()->getResult();
+    }
+
+
+
     // /**
     //  * @return Meteo[] Returns an array of Meteo objects
     //  */

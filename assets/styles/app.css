@@ -1,42 +1,77 @@
 .clear {
     background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20190223/ourmid/pngtree-sunny-sky-sunny-blue-sky-white-clouds-background-skywhite-cloudsbackground-image_85793.jpg");
 }
-
 .cloudy {
     background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20200710/pngtree-cloudy-sky-background-with-smoke-image_350845.jpg");
 }
-
 .rain {
     background-image: url("https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80");
 }
-
 .snow {
     background-image: url("https://images.unsplash.com/photo-1547754980-3df97fed72a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 }
 
-body {
-    font-family: 'Trebuchet MS', sans-serif;
-    text-align: center;
-    height: 100vh;
+#body-home {
     background-color: lightgray;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     background-position: center;
+}
+#accueil {
+    margin-top: 5%;
+}
+.presentation {
+    display: flex;
+    justify-content: flex-end;
+}
+.liste, .choix-meteo{
+    display: flex;
+    justify-content: flex-start;
+}
+#body-meteo {
+    font-family: 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
     background-size: cover;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-
-h1{
+#icons {
+    width: 40%;
+}
+.cardItems {
+    margin-top: 70px;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+.selection {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#section {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+h1 {
     font-size: 3em;
 }
-
-.wi{
-    font-size: 3em;
-    line-height: 3em;
+h2 {
+    font-size: 5em;
+}
+.container-fluid {
+    display: flex;
+    justify-content: center;
 }
 
-h2{
-    font-size: 2em;
-}

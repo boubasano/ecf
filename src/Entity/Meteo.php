@@ -6,6 +6,7 @@ use App\Repository\MeteoRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
+
 /**
  * @ORM\Entity(repositoryClass=MeteoRepository::class)
  * @UniqueEntity(fields={"name"},
@@ -119,4 +120,6 @@ class Meteo
     {
         return $this->weather_descriptions;
     }
+
+
 }

@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Votre selection météo !{% endblock %}
+
+{% block body %}
+    <div class="container cont">
+        <h1 class="selection"> Votre selection </h1><br><br>
+        <div class="choix-meteo">
+            <a href="{{ path('home') }}">
+                <button type="button" class="btn btn-outline-secondary">Accueil</button>
+            </a>
+            <a href="{{ path('meteo') }}">
+                <button type="button" class="btn btn-outline-secondary">Vos favoris</button>
+            </a>
+        </div>
+        <section>
+            {% for meteos in meteosearched %}
+
+                <img src="{{ meteos.weather_icons }}" class="card-img-top" alt="image" id="icons"><br><br>
+                <h2>
+                    <a href="{{ path('home') }}"><span id="ville">{{ meteos.name }}</span></a>
+                </h2>
+                <h3><span id="temperature">{{ meteos.temperature }}</span> °C (<span
+                            id="conditions">{{ meteos.weather_descriptions }}</span>)</h3>
+                <h3>Taux d'humidité : <span id="humidity">{{ meteos.humidity }}</span></h3>
+            {% endfor %}
+        </section>
+    </div>
+{% endblock %}
+
+
+
+

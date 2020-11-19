@@ -27,27 +27,33 @@ class HomeController extends AbstractController
         $meteo = new Meteo();
         $form = $this->createForm(MeteoType::class);
         $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid())
-        {
-            $url = $this->param->get('api.meteo.url');
-            $key = $this->param->get('api.meteo.key');
-            $ville = $request->request->get('search');
-            $fullUrl = $url.$key.$ville;
-            $meteoInfos = json_decode(file_get_contents($fullUrl));
-            $meteo->setName($meteoInfos->location->name);
-            $meteo->setWeatherDescriptions($meteoInfos->current->weather_descriptions[0]);
-            $meteo->setTemperature($meteoInfos->current->temperature);
-            $meteo->setHumidity($meteoInfos->current->humidity);
-            $meteo->setWeatherIcons($meteoInfos->current->weather_icons[0]);
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($meteo);
-            $entityManager->flush();
-
-            return$this->redirectToRoute('meteo');
+        if ($form->isSubmitted() && $form->isValid()) {
+            try {
+                $url = $this->param->get('api.meteo.url');
+                $key = $this->param->get('api.meteo.key');
+                $ville = $request->request->get('search');
+                $fullUrl = $url . $key . $ville;
+                $meteoInfos = json_decode(file_get_contents($fullUrl));
+                $meteo->setName($meteoInfos->location->name);
+                $meteo->setWeatherDescriptions($meteoInfos->current->weather_descriptions[0]);
+                $meteo->setTemperature($meteoInfos->current->temperature);
+                $meteo->setHumidity($meteoInfos->current->humidity);
+                $meteo->setWeatherIcons($meteoInfos->current->weather_icons[0]);
+                $entityManager = $this->getDoctrine()->getManager();
+                $entityManager->persist($meteo);
+                $entityManager->flush();
+            } catch (\Exception $exception) {
+                $this->addFlash(
+                    'error',
+                    'Server error: ' . $exception->getMessage()
+                );
+            }
+            return $this->redirectToRoute('meteo-show');
         }
         return $this->render('home/index.html.twig', [
             'meteo' => $meteo,
             'form' => $form->createView(),
+
         ]);
     }
 }

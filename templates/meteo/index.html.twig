@@ -1,22 +1,32 @@
-{% extends 'base.html.twig' %}
+{% extends 'base-meteo.html.twig' %}
 
 {% block title %}Hello MeteoController!{% endblock %}
 
 {% block body %}
-    {% for meteos in meteo %}
-    <div class="container-fluid">
-        <div class="card-deck">
-            <div class="card">
-                <img src="{{ meteos.weather_icons }}" class="card-img-top" alt="image" id="icons"><br><br>
-                <div class="card-body">
-                    <h5 class="card-title" id="ville">{{ meteos.name }}</h5>
-                    <p class="card-text" id="temperature">{{ meteos.temperature }} °C ({{ meteos.weather_descriptions }}
-                        )</p>
-                    <p class="card-text" id="humidity">Taux d'humidité: {{ meteos.humidity }}</p>
-                    <a href="#" class="btn btn-secondary">Go somewhere</a>
-                </div>
-            </div>
+
+        <h1 class="selection">Votre selection météo</h1>
+        <div class="liste">
+        <a href="{{ path('home') }}">
+            <button type="button" class="btn btn-outline-secondary">Accueil</button>
+        </a>
         </div>
-    </div>
-    {% endfor %}
+        <section id="section">
+            {% for meteos in meteo %}
+                <div class="card-deck">
+                    <div class="card mb-4">
+                        <img class="card-img-top img-fluid icons" src="{{ meteos.weather_icons }}" alt="image">
+                        <div class="card-body">
+                            <h4 class="card-title" id="ville">{{ meteos.name }}</h4>
+                            <p class="card-text" id="temperature">{{ meteos.temperature }} °C
+                                ({{ meteos.weather_descriptions }}
+                                )</p>
+                            <p class="card-text" id="humidity">Taux d'humidité: {{ meteos.humidity }}</p>
+                            <a href="#" class="btn btn-danger">Supprimer</a>
+                            <a href="#" class="btn btn-secondary">Afficher</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </section>
 {% endblock %}
+
