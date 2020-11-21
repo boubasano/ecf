@@ -9,6 +9,8 @@ use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Validator\Validation;
+use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 class HomeController extends AbstractController
 {
@@ -48,6 +50,7 @@ class HomeController extends AbstractController
                     'Server error: ' . $exception->getMessage()
                 );
             }
+
             return $this->redirectToRoute('meteo-show');
         }
         return $this->render('home/index.html.twig', [

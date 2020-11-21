@@ -14,9 +14,9 @@
             </a>
         </div>
         <section>
-            {% for meteos in meteosearched %}
+            {% for meteos in meteo %}
 
-                <img src="{{ meteos.weather_icons }}" class="card-img-top" alt="image" id="icons"><br><br>
+                <img src="{{ meteos.weather_icons }}" class="card-img-top icons" alt="image"><br><br>
                 <h2>
                     <a href="{{ path('home') }}"><span id="ville">{{ meteos.name }}</span></a>
                 </h2>
