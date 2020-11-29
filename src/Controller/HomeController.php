@@ -36,21 +36,21 @@ class HomeController extends AbstractController
                 $ville = $request->request->get('search');
                 $fullUrl = $url . $key . $ville;
                 $meteoInfos = json_decode(file_get_contents($fullUrl));
-                $meteo->setName($meteoInfos->location->name);
-                $meteo->setWeatherDescriptions($meteoInfos->current->weather_descriptions[0]);
-                $meteo->setTemperature($meteoInfos->current->temperature);
-                $meteo->setHumidity($meteoInfos->current->humidity);
-                $meteo->setWeatherIcons($meteoInfos->current->weather_icons[0]);
-                $entityManager = $this->getDoctrine()->getManager();
-                $entityManager->persist($meteo);
-                $entityManager->flush();
+                    $meteo->setName($meteoInfos->location->name);
+                    $meteo->setWeatherDescriptions($meteoInfos->current->weather_descriptions[0]);
+                    $meteo->setTemperature($meteoInfos->current->temperature);
+                    $meteo->setHumidity($meteoInfos->current->humidity);
+                    $meteo->setWeatherIcons($meteoInfos->current->weather_icons[0]);
+                    $entityManager = $this->getDoctrine()->getManager();
+                    $entityManager->persist($meteo);
+                    $entityManager->flush();
+
             } catch (\Exception $exception) {
                 $this->addFlash(
                     'error',
                     'Server error: ' . $exception->getMessage()
                 );
             }
-
             return $this->redirectToRoute('meteo-show');
         }
         return $this->render('home/index.html.twig', [

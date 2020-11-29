@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0721678-2a69-4276-aa2e-c6b6b0edc991" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/GraphiqueController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/graphique/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ecf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecf.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/annotations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20201116222848.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MeteoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MeteoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Meteo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Meteo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/MeteoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/MeteoRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base-meteo.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base-meteo.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/meteo/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/meteo/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/meteo/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/meteo/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,19 +142,41 @@
       <path value="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions" />
       <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
       <path value="$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle" />
+      <path value="$PROJECT_DIR$/vendor/league/uri-parser" />
+      <path value="$PROJECT_DIR$/vendor/league/uri" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/league/uri-interfaces" />
+      <path value="$PROJECT_DIR$/vendor/kelunik/certificate" />
+      <path value="$PROJECT_DIR$/vendor/daverandom/libdns" />
+      <path value="$PROJECT_DIR$/vendor/amphp/windows-registry" />
+      <path value="$PROJECT_DIR$/vendor/amphp/process" />
+      <path value="$PROJECT_DIR$/vendor/amphp/serialization" />
+      <path value="$PROJECT_DIR$/vendor/amphp/socket" />
+      <path value="$PROJECT_DIR$/vendor/amphp/sync" />
+      <path value="$PROJECT_DIR$/vendor/amphp/hpack" />
+      <path value="$PROJECT_DIR$/vendor/amphp/http" />
+      <path value="$PROJECT_DIR$/vendor/amphp/http-client" />
+      <path value="$PROJECT_DIR$/vendor/amphp/parser" />
+      <path value="$PROJECT_DIR$/vendor/amphp/amp" />
+      <path value="$PROJECT_DIR$/vendor/amphp/byte-stream" />
+      <path value="$PROJECT_DIR$/vendor/amphp/cache" />
+      <path value="$PROJECT_DIR$/vendor/amphp/dns" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kOGX4pwHHuyteKEAolOaVBdKgN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjetsSymfony/m2i-streaming" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Formation-ionic" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -181,11 +203,22 @@
       <workItem from="1605906461997" duration="667000" />
       <workItem from="1605907476453" duration="17792000" />
       <workItem from="1605955667594" duration="15040000" />
+      <workItem from="1605988444959" duration="909000" />
+      <workItem from="1606032751398" duration="10474000" />
+      <workItem from="1606387330365" duration="32000" />
+      <workItem from="1606399637007" duration="699000" />
+      <workItem from="1606402007267" duration="626000" />
+      <workItem from="1606424897272" duration="898000" />
+      <workItem from="1606428108525" duration="475000" />
+      <workItem from="1606430390880" duration="489000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="669" y="243" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605741492101">
@@ -196,10 +229,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605620768217" />
-    <state x="621" y="216" key="FileChooserDialogImpl" timestamp="1605965906806">
+    <state x="621" y="216" key="FileChooserDialogImpl" timestamp="1606387360749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="621" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605965906806" />
+    <state x="621" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606387360749" />
     <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1605574341074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

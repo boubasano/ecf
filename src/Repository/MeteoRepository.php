@@ -18,8 +18,6 @@ class MeteoRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Meteo::class);
     }
-
-
     public function findMeteoByName($name)
     {
         return $this->createQueryBuilder("m")
@@ -29,6 +27,13 @@ class MeteoRepository extends ServiceEntityRepository
             ->setMaxResults(1)
             ->setLifetime(1)
             ->getQuery()->getResult();
+    }
+    public function findByName($name){
+        {
+            return $this->createQueryBuilder('m')
+                ->andWhere("m.name LIKE ?", "%$name%")
+                ->getQuery()->getResult();
+        }
     }
 
 
