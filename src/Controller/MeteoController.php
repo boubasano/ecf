@@ -29,22 +29,10 @@ class MeteoController extends AbstractController
     }
 
     /**
-     * @Route("/city/", name="meteo-show", methods={"GET", "POST"})
+     * @Route("/city/{name}", name="meteo-show", methods={"GET", "POST"})
      */
-    public function show(EntityManagerInterface $entityManager)
+    public function show(Meteo $meteo)
     {
-        try {
-            $q = $entityManager->createQuery("SELECT m FROM App:Meteo m ORDER BY m.id DESC")
-                ->setMaxResults(1)
-                ->setLifetime(1);
-        } catch (\Exception $exception) {
-            $this->addFlash(
-                'error',
-                'Server error: ' . $exception->getMessage()
-            );
-        }
-        $meteo = $q->getResult();
-
         return $this->render('meteo/show.html.twig', [
             'meteo' => $meteo,
         ]);

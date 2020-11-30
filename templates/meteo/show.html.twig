@@ -14,16 +14,14 @@
             </a>
         </div>
         <section>
-            {% for meteos in meteo %}
 
-                <img src="{{ meteos.weather_icons }}" class="card-img-top icons" alt="image"><br><br>
+                <img src="{{ meteo.weather_icons }}" class="card-img-top icons" alt="image"><br><br>
                 <h2>
-                    <a href="{{ path('home') }}"><span id="ville">{{ meteos.name }}</span></a>
+                    <a href="{{ path('home') }}"><span id="ville">{{ meteo.name }}</span></a>
                 </h2>
-                <h3><span id="temperature">{{ meteos.temperature }}</span> °C (<span
-                            id="conditions">{{ meteos.weather_descriptions }}</span>)</h3>
-                <h3>Taux d'humidité : <span id="humidity">{{ meteos.humidity }}</span></h3>
-            {% endfor %}
+                <h3><span id="temperature">{{ meteo.temperature }}</span> °C (<span
+                            id="conditions">{{ meteo.weather_descriptions }}</span>)</h3>
+                <h3>Taux d'humidité : <span id="humidity">{{ meteo.humidity }}</span></h3>
         </section>
     </div>
 {% endblock %}

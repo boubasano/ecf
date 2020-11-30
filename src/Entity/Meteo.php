@@ -11,8 +11,6 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=MeteoRepository::class)
- * @UniqueEntity(fields={"name"},
- *     message="Votre selection se trouve dans mes favoris")
  */
 class Meteo
 {
