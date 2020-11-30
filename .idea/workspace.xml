@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0721678-2a69-4276-aa2e-c6b6b0edc991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/GraphiqueController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/graphique/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ecf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecf.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/MeteoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/MeteoRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base-meteo.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base-meteo.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,6 +199,7 @@
       <workItem from="1606424897272" duration="898000" />
       <workItem from="1606428108525" duration="475000" />
       <workItem from="1606430390880" duration="489000" />
+      <workItem from="1606688007996" duration="407000" />
     </task>
     <servers />
   </component>
