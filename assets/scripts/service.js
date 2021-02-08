@@ -19,6 +19,5 @@ export async function main() {
         .then((json) => json);
 
     displayWeatherInfos(meteo);
-
 }
 

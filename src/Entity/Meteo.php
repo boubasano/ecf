@@ -5,12 +5,14 @@ namespace App\Entity;
 use App\Repository\MeteoRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\Validator\Mapping\ClassMetadata;
+use Symfony\Component\Validator\Constraints as Assert;
 
 
 /**
  * @ORM\Entity(repositoryClass=MeteoRepository::class)
  * @UniqueEntity(fields={"name"},
- *     message="Votre selection se trouve dans l'historique de recherches")
+ *     message="Votre selection se trouve dans mes favoris")
  */
 class Meteo
 {
@@ -119,6 +121,19 @@ class Meteo
     public function getweather_descriptions(): ?string
     {
         return $this->weather_descriptions;
+    }
+    public function isUnique()
+    {
+        return $this->name;
+
+    }
+    public static function loadValidatorMetadata(ClassMetadata $metadata)
+    {
+        $metadata->addConstraint(new UniqueEntity([
+            'fields' => 'name',
+            'message'=> "Votre selection se trouve dans vos favoris"
+        ]));
+        $metadata->addPropertyConstraint('name', new Assert\Unique());
     }
 
 

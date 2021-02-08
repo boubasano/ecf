@@ -2,29 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0721678-2a69-4276-aa2e-c6b6b0edc991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Services/ApiBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/ApiService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Service.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base-meteo.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/meteo/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ecf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ecf.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/validator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/validator.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes/annotations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201116222848.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MeteoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MeteoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Meteo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Meteo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/MeteoRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/MeteoRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base-meteo.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base-meteo.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/meteo/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/meteo/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/meteo/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/meteo/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +154,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjetsSymfony/atelier-symfony" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProjetsSymfony/m2i-streaming" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -186,7 +176,11 @@
       <workItem from="1605613381162" duration="9876000" />
       <workItem from="1605652268655" duration="7956000" />
       <workItem from="1605686521428" duration="36794000" />
-      <workItem from="1605773169929" duration="28366000" />
+      <workItem from="1605773169929" duration="29190000" />
+      <workItem from="1605877023113" duration="16080000" />
+      <workItem from="1605906461997" duration="667000" />
+      <workItem from="1605907476453" duration="17792000" />
+      <workItem from="1605955667594" duration="15040000" />
     </task>
     <servers />
   </component>
@@ -202,10 +196,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605620768217" />
-    <state x="300" y="204" key="FileChooserDialogImpl" timestamp="1605789674004">
+    <state x="621" y="216" key="FileChooserDialogImpl" timestamp="1605965906806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="300" y="204" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605789674004" />
+    <state x="621" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605965906806" />
     <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1605574341074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -222,10 +216,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605574341074" />
-    <state x="787" y="243" key="NewPhpClassDialog" timestamp="1605741923741">
+    <state x="787" y="243" key="NewPhpClassDialog" timestamp="1605913605915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="787" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605741923741" />
+    <state x="787" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605913605915" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1605804088340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

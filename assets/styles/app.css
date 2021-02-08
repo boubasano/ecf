@@ -13,6 +13,7 @@
 
 #body-home {
     background-color: lightgray;
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Ffr%2Fsearch%2Fciel%2Bdegage%3Fimage_type%3Dillustration&psig=AOvVaw0mgsUHc-9FZzNdts9Lm8wY&ust=1606056753759000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjThubxk-0CFQAAAAAdAAAAABAD");
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -26,6 +27,10 @@
 }
 #accueil {
     margin-top: 5%;
+}
+.footer-favoris {
+    display: flex;
+    justify-content: center;
 }
 .presentation {
     display: flex;
@@ -42,8 +47,10 @@
     background-color: lightgray;
     background-size: cover;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Ffr%2Fsearch%2Fciel%2Bdegage%3Fimage_type%3Dillustration&psig=AOvVaw0mgsUHc-9FZzNdts9Lm8wY&ust=1606056753759000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjThubxk-0CFQAAAAAdAAAAABAD");
+
 }
-#icons {
+.icons {
     width: 40%;
 }
 .cardItems {
