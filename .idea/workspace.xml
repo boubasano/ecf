@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0721678-2a69-4276-aa2e-c6b6b0edc991" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210727115120.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MeteoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MeteoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Meteo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Meteo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/graphique/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graphique/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/meteo/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/meteo/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base-meteo.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base-meteo.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/meteo/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/meteo/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +170,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Formation-ionic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../site_presentation" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -213,7 +212,75 @@
       <workItem from="1606750125689" duration="1721000" />
       <workItem from="1606752115423" duration="1779000" />
       <workItem from="1606753933262" duration="1745000" />
-      <workItem from="1606755886001" duration="525000" />
+      <workItem from="1606755886001" duration="987000" />
+      <workItem from="1606908112198" duration="547000" />
+      <workItem from="1606987769548" duration="688000" />
+      <workItem from="1606992365538" duration="16000" />
+      <workItem from="1607000478190" duration="1197000" />
+      <workItem from="1607025415487" duration="17000" />
+      <workItem from="1607038098087" duration="608000" />
+      <workItem from="1607039395676" duration="595000" />
+      <workItem from="1607041250997" duration="10000" />
+      <workItem from="1607045169019" duration="129000" />
+      <workItem from="1607068070722" duration="19000" />
+      <workItem from="1607681502677" duration="996000" />
+      <workItem from="1607682557114" duration="218000" />
+      <workItem from="1607691704755" duration="5000" />
+      <workItem from="1607691757624" duration="20000" />
+      <workItem from="1607698598193" duration="1541000" />
+      <workItem from="1607700178747" duration="1000" />
+      <workItem from="1610058886252" duration="786000" />
+      <workItem from="1610283354344" duration="62000" />
+      <workItem from="1612743238621" duration="100000" />
+      <workItem from="1627421447619" duration="43000" />
+      <workItem from="1627421575632" duration="424000" />
+      <workItem from="1627422022422" duration="17000" />
+      <workItem from="1627422869488" duration="729000" />
+      <workItem from="1627423741063" duration="498000" />
+      <workItem from="1627424267265" duration="1773000" />
+      <workItem from="1627426456421" duration="596000" />
+      <workItem from="1627430218364" duration="10000" />
+      <workItem from="1627430404769" duration="13000" />
+      <workItem from="1627432369522" duration="173000" />
+      <workItem from="1628461008725" duration="143000" />
+      <workItem from="1628635610915" duration="1525000" />
+      <workItem from="1628637173248" duration="1504000" />
+      <workItem from="1628638991652" duration="594000" />
+      <workItem from="1628802093870" duration="228000" />
+      <workItem from="1628895437973" duration="309000" />
+      <workItem from="1628895765579" duration="977000" />
+      <workItem from="1628897739114" duration="597000" />
+      <workItem from="1628899726894" duration="595000" />
+      <workItem from="1629387623775" duration="599000" />
+      <workItem from="1629389887774" duration="601000" />
+      <workItem from="1629416419279" duration="821000" />
+      <workItem from="1629418228776" duration="1425000" />
+      <workItem from="1629420042698" duration="1436000" />
+      <workItem from="1629450986670" duration="1610000" />
+      <workItem from="1629452806330" duration="595000" />
+      <workItem from="1629454636225" duration="773000" />
+      <workItem from="1629457487848" duration="598000" />
+      <workItem from="1629462046769" duration="1514000" />
+      <workItem from="1629463863813" duration="1597000" />
+      <workItem from="1629494113165" duration="861000" />
+      <workItem from="1629495928124" duration="595000" />
+      <workItem from="1629497741023" duration="645000" />
+      <workItem from="1629612183798" duration="613000" />
+      <workItem from="1629613987456" duration="742000" />
+      <workItem from="1629641706226" duration="594000" />
+      <workItem from="1629643533404" duration="597000" />
+      <workItem from="1629712110399" duration="596000" />
+      <workItem from="1629795129464" duration="76000" />
+      <workItem from="1629881696698" duration="504000" />
+      <workItem from="1629882248530" duration="599000" />
+      <workItem from="1629884066592" duration="599000" />
+      <workItem from="1629964423593" duration="809000" />
+      <workItem from="1630614090128" duration="596000" />
+      <workItem from="1630701332100" duration="103000" />
+      <workItem from="1630966773753" duration="939000" />
+      <workItem from="1630967765386" duration="1783000" />
+      <workItem from="1630969698007" duration="279000" />
+      <workItem from="1630969980077" duration="755000" />
     </task>
     <servers />
   </component>
@@ -224,45 +291,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser" timestamp="1606756096225">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1630970445633">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="202" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606756096224" />
-    <state x="669" y="243" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605741492101">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="669" y="243" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605741492101" />
-    <state x="1170" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605620768217">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1170" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605620768217" />
-    <state x="621" y="216" key="FileChooserDialogImpl" timestamp="1606387360749">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="621" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606387360749" />
-    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1605574341074">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605574341074" />
-    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1605574341073">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605574341073" />
-    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1605574341073">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605574341073" />
-    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1605574341074">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="914" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605574341074" />
-    <state x="787" y="243" key="NewPhpClassDialog" timestamp="1605913605915">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="787" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605913605915" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1605804088340">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605804088340" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1630970445633" />
+    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1629795202378" />
   </component>
 </project>

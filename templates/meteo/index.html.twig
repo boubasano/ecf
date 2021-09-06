@@ -25,6 +25,7 @@
                                 <input type="hidden" name="_method" value="DELETE">
                                 <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ meteos.id) }}">
                                 <button class="btn btn-outline-danger">Supprimer</button>
+                                <p>{{ "now"|date("d/m/Y") }}</p>
                             </form>
 {#                            <a href="{{ path('detail-meteo', {'name': meteos.name}) }}" class="btn btn-outline-secondary">Afficher</a>#}
                         </div>

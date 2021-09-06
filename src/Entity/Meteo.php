@@ -11,6 +11,9 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=MeteoRepository::class)
+ *  * @UniqueEntity(
+ *    fields={"name"},
+ *     message="Retrouver les météos de cette ville dans vos favoris")
  */
 class Meteo
 {
@@ -22,11 +25,12 @@ class Meteo
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255, unique=true)
+     * @ORM\Column(type="string", length=255)
      */
     private $name;
 
     /**
+     *
      * @ORM\Column(type="string", length=255)
      */
     private $weather_descriptions;
@@ -45,6 +49,11 @@ class Meteo
      * @ORM\Column(type="string", length=255)
      */
     private $weather_icons;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $date;
 
     public function getId(): ?int
     {
@@ -132,6 +141,18 @@ class Meteo
             'message'=> "Votre selection se trouve dans vos favoris"
         ]));
         $metadata->addPropertyConstraint('name', new Assert\Unique());
+    }
+
+    public function getDate(): ?\DateTimeInterface
+    {
+        return $this->date;
+    }
+
+    public function setDate(?\DateTimeInterface $date): self
+    {
+        $this->date = $date;
+
+        return $this;
     }
 
 
